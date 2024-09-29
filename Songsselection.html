@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songs Selections</title>
+    <link rel="stylesheet" href="Moviesselection.css">
+
+    <script>
+        function Illaiayaraja(){
+            window.location.href = "http://127.0.0.1:5501/Illaiyarajasongs.html";
+        }
+        function Ani()
+        {
+            window.location.href = "http://127.0.0.1:5501/Anirudhsongs.html";
+        }
+
+        function VijayAntony()
+        {
+            window.location.href = "http://127.0.0.1:5501/VijayAntonysong.html";
+        }
+
+        function Spb()
+        {
+            window.location.href = "http://127.0.0.1:5501/Spbsongs.html";
+        }
+
+        function Predeep()
+        {
+            window.location.href = "http://127.0.0.1:5501/Predeepsong.html";
+        }
+
+        function Mano(){
+            window.location.href = "http://127.0.0.1:5501/Manosong.html";
+        }
+        function Dhanush(){
+            window.location.href = "http://127.0.0.1:5501/Dhanushsongs.html";
+        }
+        function Karthik(){
+            window.location.href = "http://127.0.0.1:5501/Karthiksong.html";
+        }
+
+        function Goto(){
+      let check=document.getElementById("Select").value;
+      if(check==""){
+        document.getElementById("error").innerHTML="Select an Option!"
+      }
+      if(check=='Tamil')
+      window.location.href="Tamilsongs.html";
+      if(check=='English')
+      window.location.href="Englishsong.html";
+      if(check=='Malayalam')
+      window.location.href="Malayalam.song.html";
+      if(check=='Telugu')
+      window.location.href="Telugusong.html";
+      }
+    </script>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <div class="Headerflex">
+        <img src="Images/fino.gif" alt="">
+        <h2 id="spotify"><span style="color: rgb(251, 255, 0);">S</span>ound<span style="color: rgb(251, 255, 0);">C</span>inema.</h2>
+    </div>
+
+    <div class="container">
+        <label for="">Search the Language</label>
+        <br>
+<select name="" id="Select">
+    <option value=""  id="languageSelect">Select Language</option>
+  <option value="Tamil">Tamil</option>
+  <option value="English">English</option>
+  <option value="Malayalam">Malayalam</option>
+  <option value="Telugu">Telugu</option>
+</select>
+<button onclick="Goto()">Go</button>
+<p id="error" style="  color: red; "></p>
+
+<h2 id="directorname">Music Directors</h2>
+
+
+<div class="Directors">
+<div class="Border firstdirector" onclick="Illaiayaraja()">
+<img src="Images/Illaiyarajasong.jpg" alt="">
+<p class="names">Illaiyaraja</p>
+</div>
+<div class=" Border seconddirector" onclick="Ani()">
+<img src="Images/Anirudhsong.jpg" alt="">
+<p class="names">Anirudh</p>
+</div>
+<div class=" Border thirddirector" onclick="VijayAntony()">
+<img src="Images/VijayAtonysong.jpg" alt="">
+<p class="names">VijayAtony</p>
+</div>
+<div class=" Border fourthdirector" onclick="Spb()">
+<img src="Images/spbsong.jpg" alt="">
+<p class="names">Spb</p>
+</div>
+</div>
+
+<h2 id="Actors">Singers</h2>
+<div class="Actors">
+    <div class="Border firstActors" onclick="Predeep()">
+    <img src="Images/predeepsong.jpg" alt="">
+    <p class="names">Predeep</p>
+    </div>
+    <div class=" Border secondActors">
+        <img src="Images/Manotamil.jpg" alt="" onclick="Mano()">
+    <p class="names">Mano</p>
+    </div>
+    <div class=" Border thirdActors" onclick="Dhanush()">
+        <img src="Images/Dhanushsong.jpg" alt="">
+    <p class="names">Dhanush</p>
+    </div>
+    <div class=" Border fourtActors">
+        <img src="Images/Karthiksong.jpg" alt="" onclick="Karthik()">
+    <p class="names">Karthik</p>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

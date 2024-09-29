@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-image: url('Images/Background.jpg');
+    background-attachment: fixed;
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+ ;
+}
+
+.top-bar {
+    background-color:rgb(5, 5, 5);
+    height: 90px;
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-bar img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.form-container {
+    backdrop-filter: blur(8px);
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:  0 0 10px white;
+    width: 80%;
+    max-width: 380px;
+    text-align: center;
+    /* margin: 20px auto; */
+       margin: 20vh auto;
+}
+
+
+
+h1 {
+    color: white;
+     font-size: 28px;
+     font-family: 'Arial', sans-serif;
+     font-size: 2em;
+     animation: changeColor 1s infinite; 
+  }
+  @keyframes changeColor {
+      40% {
+          color: yellow;
+      }
+  }
+
+p {
+    margin-top: 0;
+    margin-bottom: 20px;
+   
+}
+
+input[type="text"]
+{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: rgb(132,61,17);
+    border: 2px solid white;
+    color: white;
+}
+
+input{
+    color: white;
+}
+input[type="submit"] 
+{
+    width: 30%;
+    border-radius: 5px;
+     padding: 10px;
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+font-size: 17px;
+
+    border-radius: 10px;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+    .form-container {
+        width: 80%;
+    }
+    .top-bar{
+        width: 94%;
+        
+    }
+}
+#image{
+    margin-top:-10px ;
+    width: 100px;
+    height: 100px;
+    margin-left:-20px ;
+}
+h2{
+    color: white;
+}
+p{
+    color: white;
+    font-size: 18px;
+}

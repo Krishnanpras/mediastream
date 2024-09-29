@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-image: url('Images/Background.jpg');
+    background-attachment: fixed;
+     background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+ ;
+}
+
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+ 
+}
+  .Headerflex{
+  background-color: black;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+.Headerflex h2{
+  color: white;
+ margin-left:-15px ;
+}
+.Headerflex img{
+  width: 90px;
+padding-left: 30px;
+}
+input{
+  border-radius: 6px;
+  outline: none;
+  border: none;
+ font-size: 12px;
+ 
+ background-color: rgb(132,61,17);
+ border: 2px solid white;
+ color: white;
+  
+}
+.container{
+  backdrop-filter: blur(8px);
+width: 500px;
+height: 450px;
+border: 2px solid rgb(255, 255, 255);
+border-radius: 20px;
+box-shadow:  0 0 10px white;
+}
+label{
+font-size: 17px;
+  color: rgb(255, 255, 255);
+}
+
+
+h1 {
+  color: white;
+  
+   font-family: 'Arial', sans-serif;
+   font-size: 2em;
+   animation: changeColor 1s infinite; 
+}
+@keyframes changeColor {
+    40% {
+        color: yellow;
+    }
+}
+
+p {
+  margin-top: 10PX;
+font-size: 18px;
+font-weight: 600;
+  color: #666;
+}
+
+.container h1{
+text-align: center;
+margin-top: 30px;
+}
+.wrapper{
+display: flex;
+
+justify-content: center;
+margin-top: 50px;
+}
+.buttonflex{
+margin-top: 30px;
+display: flex;
+justify-content: center;
+gap: 20px;
+
+}
+button{
+padding: 8px 15px ;
+border-radius: 10px;
+outline: none;
+border: none;
+background-color: blue;
+color: white;
+border: none;
+cursor: pointer;
+font-size: 16px;
+
+
+}
+.flex{
+margin-top: 40px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+gap: 30px;
+
+}
+
+#error{
+text-align: center;
+color: red;
+
+
+}
+input{
+width: 95%;
+height: 35px;
+font-size: 15px
+}
+@media screen and (max-width: 594px) {
+.flex{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.container{
+width: 320px;
+height: 730px;
+}
+}

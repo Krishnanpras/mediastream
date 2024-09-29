@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('Images/b1.jpg');
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.Songplace{
+   border: solid 2px white;
+   border-radius: 10px;
+    margin-top: 20px;
+    width: 260px;
+    height: 230px;
+    box-shadow:  0px 0px 10px white;
+}
+.songslist{
+display: flex;
+/* flex-direction: column; */
+  
+    justify-content: center;
+   margin-top: 60px;
+   gap: 40px;
+    
+    
+}
+.songslist img{
+    width: 70px;
+    border-radius: 50%;
+}
+#currentlygif{
+    width: 110px;
+  margin-left: 70px;
+  margin-top: -20px;
+}
+h4{
+    margin-top: 1px;
+margin-left: 90px;
+color: white;
+    
+}
+.Songplace img{
+    width: 170px;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1197px){
+    .songslist{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 40px;
+    }
+
+
+}
+
+@media screen and (max-width: 387px){
+
+audio{
+width: 250px;
+}     
+
+#small{
+width: 65px;
+}     
+
+
+}

@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-image: url('Images/Background.jpg');
+    background-attachment: fixed;
+     background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+ ;
+}
+body {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+   
+  }
+
+.top-bar {
+    background-color:rgb(5, 5, 5);
+    height: 90px;
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-bar img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.form-container {
+    backdrop-filter: blur(8px);
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:  0 0 10px white;
+    width: 80%;
+    height: 350px;
+    max-width: 300px;
+    text-align: center;
+    /* margin: 20px auto; */
+    position: relative;
+      
+}
+.flex1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+
+h1 {
+    color: white;
+     font-size: 28px;
+     font-family: 'Arial', sans-serif;
+     font-size: 2em;
+     animation: changeColor 1s infinite; 
+  }
+  @keyframes changeColor {
+      40% {
+          color: yellow;
+      }
+  }
+
+p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    
+}
+label{
+    font-size: 17px;
+}
+#nametext{
+    position: absolute;
+    left: 69px;
+    color: white;
+}
+#passwordtext{
+    position: absolute;
+    left: 69px;
+    color: white;
+}
+input[type="text"]
+{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(132,61,17);
+    border: 2px solid white;
+  
+}
+#Forget a{
+    text-decoration: none;
+    position: absolute;
+    left: 75px;
+    font-size: 15px;
+    color: rgb(77, 179, 10);
+}
+.links{
+    margin-top: 20px;
+}
+#Register{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    margin-left: 10px;
+    
+}
+input[type="submit"] 
+{
+    width: 68%;
+    border-radius: 5px;
+     padding: 9px;
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+font-size: 16px;
+
+    border-radius: 10px;
+    
+}
+input ::placeholder{
+    color: white;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+    .form-container {
+        width: 80%;
+    }
+    .top-bar{
+        width: 94%;
+        
+    }
+}
+#image{
+    margin-top:-10px ;
+    width: 100px;
+    height: 100px;
+    margin-left:-20px ;
+}
+h2{
+    color: white;
+}
+p{
+    color: white;
+    font-size: 18px;
+}
+
+#error{
+    margin-top: -10px;
+}

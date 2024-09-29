@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Home.css">
+    <script src="Home.js"></script>
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <img src="Images/fino.gif" alt="Logo" id="image">
+        <h2 style="position: absolute; left: 80px;" id="spotify"><span style="color: rgb(251, 255, 0); ">S</span>ound<span style="color: rgb(251, 255, 0);;">C</span>inema.</h2>
+       
+       
+    </div>
+
+    <div class="flex1">
+        <div class="form-container">
+            <h1>Welcome</h1>
+          
+           
+           
+            <label for="" id="nametext">Name</label>
+            <br>
+                <input type="text" name="name"  id="name" placeholder="Enter your Name" required><br>
+                <label for="" id="passwordtext">Password</label>
+                <br>
+                <input type="text" name="Password" id="pass" placeholder="Enter your Password" required>
+                <div id="Forget" >
+                    <a href="Forgetpage.html" >ForgetPassword</a>
+                </div>
+               
+                <br>
+                <a ><input type="submit" onclick="Login()" value="Submit"></a>   
+               
+                <div class="links">
+                    <a href="Signup.html" id="Register">Dont have an account?</a>       
+                </div>
+               
+                <br>
+           
+                <p id="error" style="  color: red;"></p>
+        </div>
+    
+    </div>
+   </body>
+
+</html>
+

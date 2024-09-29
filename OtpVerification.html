@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <link rel="stylesheet" href="OtpVerification.css">
+    <script src="script.js" defer></script>
+    
+</head>
+
+<body>
+   
+
+    <div class="top-bar">
+        <img src="Images/fino.gif" alt="Logo" id="image">
+        <h2 style="position: absolute; left: 80px;" id="spotify"><span style="color: rgb(251, 255, 0); ">S</span>ound<span style="color: rgb(251, 255, 0);;">C</span>inema.</h2>
+       
+       
+    </div>
+    <div class="form-container">
+        <h1>OTP Verification</h1>
+      <p>Your Code was sent to this ***192</p>
+       
+            <div class="input-field">
+              <input type="number"  id="First"/>
+              <input type="number" id="Sec"  disabled/>
+              <input type="number"  id="Third" disabled/>
+              <input type="number" id="Four" disabled />
+            </div>
+            <br>
+            <p id="Request">Did not Recieve the code?<a href="Forgetpage.html">Request Again</a> </p>
+            <button onclick="OTP()">Verify OTP</button>
+        
+
+          <p id="error" style=" color:  rgb(255, 0, 0); margin-top: 10px; font-weight: 700;"></p>
+    </div>
+</body>
+
+</html>
